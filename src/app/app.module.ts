@@ -7,7 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {APP_ROUTING} from './app.routes';
 
 //SERVICIOS
-import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClientModule } from '@angular/common/http';
 
 //COMPONENTES
 import { AppComponent } from './app.component';
@@ -50,7 +50,8 @@ import { HomeSerieComponent } from './components/usuario/home-serie/home-serie.c
     BrowserModule,
     APP_ROUTING,
     FormsModule,
-    HttpClient
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
