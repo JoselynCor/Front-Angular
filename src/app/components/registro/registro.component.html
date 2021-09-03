@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+<body style="background: rgb(139, 236, 243);">
+    <form (ngSubmit)="onSubmit(registro)" #registro="ngForm" class= "login100-form validate-form flex-sb flex-w">
+    <div class="mx-auto" style="width: 300px;" >
+    
+        <br><h3 class="text-center">
+            Crear nueva cuenta
+        </h3><br>
+
+        <div class="container col-md-16">
+            <div class="col">
+              <input type="text" class="form-control" [(ngModel)]="usuario.nombre" required minlength="2" placeholder="Nombre" aria-label="nombre">
+            </div><br>
+            <div class="col">
+              <input type="text" class="form-control" [(ngModel)]="usuario.apellidos" placeholder="Apellidos" aria-label="apellidos">
+            </div><br>
+            <div class="col">
+                <input type="phone" class="form-control" [(ngModel)]="usuario.telefono" placeholder="Telefono" aria-label="telefono">
+            </div><br>
+            <div class="col">
+                <input type="email" class="form-control" [(ngModel)]="usuario.email"  required email placeholder="Correo" aria-label="correo">
+            </div><br>
+            <div class="col">
+                <input type="password" class="form-control" [(ngModel)]="usuario.password" required minlength="8"placeholder="Contraseña" aria-label="contraseña">
+            </div><br>
+            <div class="contact100-form-checkbox">
+                <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                <label class="label-checkbox100" for="ckb1">
+                    Recordar mi usuario
+                </label>
+            </div><br>
+        </div>
+    
+    </div>
+
+    <div class="mx-auto" style="width: 500px;" >
+        <div class="row justify-content-around ">
+            <div class="col-4 mr-5">
+                <button type="submit" class="btn btn-light" routerLink="/home-usuario">Crear cuenta</button>
+            </div>
+            <div class="col-4">
+                <a routerLink="/registro" class="txt1">
+                    <button type="submit" class="btn btn-light">Ya tengo cuenta</button>
+                </a>
+            </div>
+        </div>         
+    </div>
+</form>
+</body>
