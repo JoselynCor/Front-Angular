@@ -1,41 +1,16 @@
 <app-navbar-usuario></app-navbar-usuario>
 
 <div class="row row-cols-1 row-cols-md-3 g-4" >
-    <div class="col">
-      <div class="card">
-        <img src="assets/pelicula/peli1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Hasta el Hueso</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
+  <div class="col" *ngFor="let serie of series">
+    <div class="card" >
+      <img src={{serie.Url_imagen}} class="card-img-top" alt="..." routerLink="/capitulo">
+      <div class="card-body">
+        <h5 class="card-title">{{serie.Titulo}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{serie.Categoria}}</h6>
+        <p class="card-text">{{serie.Descripcion}}</p>
+        <a href="#" class="btn btn-primary">Rentar</a>
       </div>
     </div>
-    <div class="col">
-      <div class="card">
-        <img src="assets/pelicula/peli5.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">¿No es romantico?</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="assets/pelicula/peli3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Fractura</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="assets/pelicula/peli4.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">En la hierba alta </h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-  </div>
- 
+  </div>  
+   
+</div>

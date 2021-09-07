@@ -25,6 +25,10 @@ import { LoginComponent } from './components/shared/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { NavbarUsuarioComponent } from './components/usuario/navbar-usuario/navbar-usuario.component';
 import { HomeSerieComponent } from './components/usuario/home-serie/home-serie.component';
+import { TemplateComponent } from './pages/template/template.component';
+import { ReactiveComponent } from './pages/reactive/reactive.component';
+import { HomeRentaComponent } from './components/renta/home-renta/home-renta.component';
+import { CapituloComponent } from './components/usuario/capitulo/capitulo.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { HomeSerieComponent } from './components/usuario/home-serie/home-serie.c
     LoginComponent,
     RegistroComponent,
     NavbarUsuarioComponent,
-    HomeSerieComponent
+    HomeSerieComponent,
+    TemplateComponent,
+    ReactiveComponent,
+    HomeRentaComponent,
+    CapituloComponent
   ],
 
 

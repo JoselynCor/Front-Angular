@@ -1,4 +1,4 @@
-export class Pagos {
+export class PagosModel {
     _id:               ID;
     Id_socio:          string;
     Numero_tarjeta?:   string;

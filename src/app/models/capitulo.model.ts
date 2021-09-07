@@ -1,4 +1,4 @@
-export class Capitulo {
+export class CapituloModel {
     _id:         ID;
     Id_Capitulo: string;
     Id_serie:    string;

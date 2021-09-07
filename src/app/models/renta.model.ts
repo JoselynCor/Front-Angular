@@ -1,4 +1,4 @@
-export class Renta {
+export class RentaModel {
     _id:                ID;
     Id_socio:           string;
     Id_peli_serie:      string;

@@ -14,12 +14,16 @@ import { LoginComponent } from './components/shared/login/login.component';
 import { RegistroComponent } from './components/registro/registro.component';
 import { NavbarUsuarioComponent } from './components/usuario/navbar-usuario/navbar-usuario.component';
 import { HomeSerieComponent } from './components/usuario/home-serie/home-serie.component';
+import { HomeRentaComponent } from './components/renta/home-renta/home-renta.component';
+import { CapituloComponent } from './components/usuario/capitulo/capitulo.component';
 
 const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'home-usuario', component:HomeUsuarioComponent },
     { path: 'home-administrador', component: HomeAdministradorComponent },
     { path: 'home-serie' , component: HomeSerieComponent},
+    { path: 'capitulo', component: CapituloComponent},
+    { path: 'home-renta' , component: HomeRentaComponent},
     { path: 'agregar-capitulo', component: AgregarCapituloComponent },
     { path: 'agregar-pelicula', component: AgregarPeliculaComponent },
     { path: 'agregar-serie', component: AgregarSerieComponent },

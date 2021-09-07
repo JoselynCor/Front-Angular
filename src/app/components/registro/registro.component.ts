@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {UsuarioModel} from '../../models/usuario.model';
 import {NgForm} from '@angular/forms';
+import { SocioModel } from 'src/app/models/socio.model';
+import { SocioService } from 'src/app/service/socio.service';
 
 @Component({
   selector: 'app-registro',
@@ -9,26 +10,25 @@ import {NgForm} from '@angular/forms';
 })
 export class RegistroComponent implements OnInit {
 
-  usuario: UsuarioModel;
+  socio: SocioModel = new SocioModel();
 
-  constructor() { }
+  constructor(private socioService: SocioService) { }
 
   ngOnInit() {
+  }
 
-    this.usuario = new UsuarioModel();
-    this.usuario.email = 'jimenezlinares.suemy@gmail.com';
-    this.usuario.password = 'ximena';
-    this.usuario.nombre = 'Suemy';
-    this.usuario.apellidos = 'Jimenez';
-    this.usuario.telefono = '5544646889';
+    saveSocio(form: NgForm){
 
-   }
+      /*if( form.invalid ){
+        console.log('Datos no válidos')
+        return;
+      }*/
+      
+      this.socioService.createSocio(this.socio)
+          .subscribe(resp => {
+            console.log(resp);
+          });
 
-   onSubmit(form: NgForm){
-
-    if(form.invalid){return;}
-     console.log('Formulario enviado');
-     console.log(this.usuario);
-     console.log(form);
-   }
+    }
+   
 }

@@ -1,4 +1,4 @@
-export class Serie {
+export class SerieModel {
     _id:           ID;
     Id_Serie:      string;
     Titulo:        string;
@@ -7,6 +7,7 @@ export class Serie {
     Temporadas:    string;
     Categoria:     string;
     Fecha_estreno: string;
+    Url_imagen: string;
 }
 
 export class ID {
