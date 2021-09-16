@@ -24,4 +24,8 @@ export class HomeSerieComponent implements OnInit {
         });
   }
 
+  openChapers(){
+    
+  }
+
 }

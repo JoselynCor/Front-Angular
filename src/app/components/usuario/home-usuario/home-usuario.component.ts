@@ -14,6 +14,7 @@ export class HomeUsuarioComponent implements OnInit {
   peliculas: PeliculaModel[] = [];
 
   constructor(private peliculaService: PeliculaService ) { }
+  
 
   ngOnInit(){
     this.peliculaService.getAllPeliculas()

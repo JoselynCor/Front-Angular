@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 //RUTAS
@@ -28,7 +29,7 @@ import { HomeSerieComponent } from './components/usuario/home-serie/home-serie.c
 import { TemplateComponent } from './pages/template/template.component';
 import { ReactiveComponent } from './pages/reactive/reactive.component';
 import { HomeRentaComponent } from './components/renta/home-renta/home-renta.component';
-import { CapituloComponent } from './components/usuario/capitulo/capitulo.component';
+import { CapituloComponent } from './components/usuario/capitulo/capituloS1.component';
 
 @NgModule({
   declarations: [
@@ -58,8 +59,8 @@ import { CapituloComponent } from './components/usuario/capitulo/capitulo.compon
     BrowserModule,
     APP_ROUTING,
     FormsModule,
-    HttpClientModule
-
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

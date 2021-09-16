@@ -1,0 +1,16 @@
+<app-navbar-usuario></app-navbar-usuario>
+
+<div class="row row-cols-1 row-cols-md-3 g-4" >
+    <div class="col" *ngFor="let capitulo of capitulos">
+      <div class="card" >
+        <img src={{capitulo.Url_imagen}} class="card-img-top" alt="..." routerLink="/capitulo">
+        <div class="card-body">
+          <h5 class="card-title">{{capitulo.Temporada}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{capitulo.Titulo}}</h6>
+          <p class="card-text">{{capitulo.Descripcion}}</p>
+          <a href="#" class="btn btn-primary">Rentar</a>
+        </div>
+      </div>
+    </div>  
+     
+  </div>

@@ -15,7 +15,7 @@ import { RegistroComponent } from './components/registro/registro.component';
 import { NavbarUsuarioComponent } from './components/usuario/navbar-usuario/navbar-usuario.component';
 import { HomeSerieComponent } from './components/usuario/home-serie/home-serie.component';
 import { HomeRentaComponent } from './components/renta/home-renta/home-renta.component';
-import { CapituloComponent } from './components/usuario/capitulo/capitulo.component';
+import { CapituloComponent } from './components/usuario/capitulo/capituloS1.component';
 
 const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
