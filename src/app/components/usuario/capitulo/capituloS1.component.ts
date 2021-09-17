@@ -5,7 +5,7 @@ import { CapituloService } from 'src/app/service/capituloS1.service';
 @Component({
   selector: 'app-capitulo',
   templateUrl: './capituloS1.component.html',
-  styles: [
+  styles: [ 
   ]
 })
 export class CapituloComponent implements OnInit {
